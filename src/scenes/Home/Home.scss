@@ -1,0 +1,22 @@
+@import "../../sass/variables.scss";
+
+body {
+  margin: 0;
+
+  .div-catalogue {
+    background-color: rgb(234, 237, 215);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .div-products {
+      width: $mainWidth;
+      border-radius: $main-border-radius;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+    }
+  }
+}
