@@ -12,7 +12,7 @@ export const Header = () => {
         <FontAwesomeIcon className='icons' icon={faBars} />
       </div>
       <div className='div-header-2'>
-        <h1 className='titulo-header'>Catálogo</h1>
+        <h1 className='titulo-header'>Ricuras</h1>
       </div>
       <div>
         <FontAwesomeIcon className='icons-search' icon={faMagnifyingGlass} />

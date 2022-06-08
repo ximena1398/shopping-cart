@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.2vw 5vw 0.2vw 5vw;
+    padding: 1vw 5vw 1vw 5vw;
   }
 
   .div-header-2 {
@@ -25,6 +25,8 @@
     .titulo-header {
       font-family: "Lobster", cursive;
       color: rgb(234, 237, 215);
+      font-size: 3vw;
+      margin: 0;
     }
   }
 

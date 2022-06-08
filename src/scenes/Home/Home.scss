@@ -1,22 +1,67 @@
 @import "../../sass/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Rubik");
 
 body {
   margin: 0;
 
   .div-catalogue {
     background-color: rgb(234, 237, 215);
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
 
-    .div-products {
-      width: $mainWidth;
-      border-radius: $main-border-radius;
+    .div-cart {
       display: flex;
+      align-items: center;
+      justify-content: right;
+
+      .tittle-cart {
+        font-family: "Rubik", sans-serif;
+        padding-right: 1vw;
+      }
+
+      .button-next-cart {
+        background-color: white;
+        border-radius: 2vw;
+        border: none;
+        color: black;
+        font-size: 1.2vw;
+        padding: 1vw;
+        width: 5vw;
+      }
+
+      .icon-cart {
+        color: black;
+        font-size: 4vh;
+        padding-right: 0.5vw;
+      }
+    }
+
+    .div-products {
+      width: $mainWidth - 2;
+      border-radius: $main-border-radius;
+      display: block;
       align-items: center;
       justify-content: center;
       background-color: white;
+      padding: 1vw;
+      margin-bottom: 2vw;
+
+      .tittle-catalogue {
+        font-family: "Rubik", sans-serif;
+        padding-right: 1vw;
+        text-align: center;
+        font-size: 3vw;
+      }
+
+      .div-products-catalogue {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
     }
   }
 }

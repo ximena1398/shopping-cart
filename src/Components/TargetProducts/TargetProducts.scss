@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Rubik");
+
+.div-target {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #fac213;
+  width: 19vw;
+  height: 30vw;
+  border-radius: 2vw;
+  padding: 1vw;
+  margin-bottom: 1.5vw;
+  margin-right: 1.5vw;
+  // opacity: 75%;
+  img {
+    max-width: 98%;
+    max-height: 98%;
+    border-radius: 2vw;
+  }
+
+  .div-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .tittle-target {
+      font-family: "Rubik", sans-serif;
+      margin: 0;
+    }
+
+    .price-target {
+      margin: 0;
+      font-family: "Rubik", sans-serif;
+      color: #990000;
+    }
+  }
+
+  .div-target-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 2vw;
+  }
+
+  .button-add-cart-main{
+      background-color: black;
+      border-radius: 2vw;
+      border: none;
+      color: white;
+      font-size: 1.2vw;
+      font-family: "Rubik", sans-serif;
+      padding: 1vw;
+  }
+}
