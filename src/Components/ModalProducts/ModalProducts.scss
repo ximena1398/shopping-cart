@@ -1,0 +1,64 @@
+.modal {
+  position: fixed;
+  //   z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  padding: 1vw;
+  width: 70vw;
+  height: 70vh;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 2vw;
+
+  .modal-container-information {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .modal-container-information-1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+
+      .modal-container-information-1-img {
+        width: 20vw;
+        height: 20vh;
+
+        .img-main {
+          max-width: 98%;
+          max-height: 98%;
+          border-radius: 2vw;
+        }
+      }
+    }
+
+    // .modal-container-information-2 {
+    // }
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modal.is-open {
+  display: flex;
+}
