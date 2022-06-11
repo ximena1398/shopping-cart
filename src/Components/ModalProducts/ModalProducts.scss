@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Rubik");
+
 .modal {
   position: fixed;
   //   z-index: 999;
@@ -13,32 +15,57 @@
 
 .modal-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  //   align-items: center;
+  //   justify-content: space-between;
   flex-direction: column;
   position: relative;
-  padding: 1vw;
+  padding: 1.5vw;
   width: 70vw;
-  height: 70vh;
+  height: 40vw;
   overflow-y: auto;
   background-color: #fff;
   border-radius: 2vw;
 
+  .div-button-close {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    .button-modal-close {
+      background-color: black;
+      border-radius: 2vw;
+      border: none;
+      color: white;
+      font-size: 1.2vw;
+      padding: 1vw;
+      width: 4vw;
+      cursor: pointer;
+    }
+  }
+
   .modal-container-information {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    // align-items: center;
     justify-content: space-between;
+    margin-top: 1vw;
 
     .modal-container-information-1 {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      //   align-items: center;
+      //   justify-content: space-between;
       flex-direction: column;
 
       .modal-container-information-1-img {
-        width: 20vw;
-        height: 20vh;
+        width: 40vw;
+        height: 25vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-color: #fac213;
+        border-style: solid;
+        border-radius: 2vw;
+        margin-bottom: 1vw;
 
         .img-main {
           max-width: 98%;
@@ -46,10 +73,70 @@
           border-radius: 2vw;
         }
       }
+
+      .modal-container-information-1-minimg {
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+
+        .mini-img {
+          width: 9.5vw;
+          height: 9.5vw;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-color: #fac213;
+          border-style: solid;
+          border-radius: 2vw;
+
+          .img-mini-img {
+            max-width: 98%;
+            max-height: 98%;
+            border-radius: 2vw;
+          }
+        }
+      }
     }
 
-    // .modal-container-information-2 {
-    // }
+    .modal-container-information-2 {
+      width: 28vw;
+      display: flex;
+      align-items: baseline;
+      justify-content: flex-start;
+      flex-direction: column;
+
+      .text-tittle {
+        color: #ff5b00;
+        font-family: "Rubik", sans-serif;
+        margin: 0;
+        margin-bottom: 1vw;
+        font-size: 2.5vw;
+      }
+
+      .div-price {
+        background-color: #B8F1B0;
+        border-radius: 2vw;
+        padding: 1vw;
+        width: 7vw;
+        height: 3vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Rubik", sans-serif;
+        font-size: 1.5vw;
+        font-weight: bold;
+
+        .p-price {
+          color: #14C38E;
+          font-size: 1vw;
+          padding-right: 0.5vw;
+        }
+      }
+
+      .text-description-product {
+        font-family: "Rubik", sans-serif;
+      }
+    }
   }
 }
 
