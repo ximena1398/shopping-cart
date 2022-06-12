@@ -14,60 +14,60 @@ export const products = [
         id: 1,
         name: "Burger",
         image: Burger,
-        price: 20.000
+        price: 21000
     },
     {
         id: 2,
         name: "Burrito",
         image: Burrito,
-        price: 18.000
+        price: 18000
     },
     {
         id: 3,
         name: "Coffee",
         image: Coffee,
-        price: 5.000
+        price: 5000
     },
     {
         id: 4,
         name: "Cola",
         image: Cola,
-        price: 5.000
+        price: 5000
     },
     {
         id: 5,
         name: "HotDog",
         image: HotDog,
-        price: 18.000
+        price: 18000
     },
     {
         id: 6,
         name: "Nuggets",
         image: Nuggets,
-        price: 26.000
+        price: 26000
     },
     {
         id: 7,
         name: "Chips",
         image: Chips,
-        price: 15.000
+        price: 15000
     },
     {
         id: 8,
         name: "Pizza",
         image: Pizza,
-        price: 28.000
+        price: 28000
     },
     {
         id: 9,
         name: "Pop Corn",
         image: PopCorn,
-        price: 13.000
+        price: 13000
     },
     {
         id: 10,
         name: "Salad",
         image: Salad,
-        price: 18.000
+        price: 18000
     }
 ]

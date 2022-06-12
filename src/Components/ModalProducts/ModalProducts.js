@@ -3,8 +3,9 @@ import './ModalProducts.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { QuantitySelector } from '../QuantitySelector/QuantitySelector';
+import { agregarCaracter } from '../../Hooks/agregarCaracter';
 
-export const ModalProducts = ({ isOpen, closeModal }) => {
+export const ModalProducts = ({ name, price, isOpen, closeModal }) => {
     //controlar que cuando se de click en el contendor del modal no se cierre (e.stopPropagation(): evita los eventos en el contenedor) 
     const handleModalContainerClick = (e) => e.stopPropagation();
 
@@ -38,8 +39,8 @@ export const ModalProducts = ({ isOpen, closeModal }) => {
                         </div>
                     </div>
                     <div className='modal-container-information-2'>
-                        <h1 className='text-tittle'>Hamburguesa extragrande</h1>
-                        <div className='div-price'><p className='p-price'>$</p>20.000</div>
+                        <h1 className='text-tittle'>{name}</h1>
+                        <div className='div-price'><p className='p-price'>$</p>{agregarCaracter(price, ".", 3)}</div>
                         <p className='text-description-product'>Nuestra hamburguesa extragrande tiene una mezcla de quesos cheddar y mozzarella, y tocino ahumado. Servida con lechuga, tomates, cebolla roja, pepinillos y mayonesa en un pan Kaiser tostado.</p>
                         <QuantitySelector />
                     </div>

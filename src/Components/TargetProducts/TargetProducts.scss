@@ -12,7 +12,23 @@
   padding: 1vw;
   margin-bottom: 1.5vw;
   margin-right: 1.5vw;
-  // opacity: 75%;
+
+  &:hover {
+    width: 20vw;
+    height: 31vw;
+    box-shadow: 0.5vw -0.5vw #fce399;
+
+    .div-target-img {
+      width: 19vw;
+      height: 22vw;
+    }
+
+    .img {
+      max-width: 99%;
+      max-height: 99%;
+    }
+  }
+
   .img {
     max-width: 98%;
     max-height: 98%;
@@ -48,14 +64,14 @@
     border-radius: 2vw;
   }
 
-  .button-add-cart-main{
-      background-color: black;
-      border-radius: 2vw;
-      border: none;
-      color: white;
-      font-size: 1.2vw;
-      font-family: "Rubik", sans-serif;
-      padding: 1vw;
-      cursor: pointer;
+  .button-add-cart-main {
+    background-color: black;
+    border-radius: 2vw;
+    border: none;
+    color: white;
+    font-size: 1.2vw;
+    font-family: "Rubik", sans-serif;
+    padding: 1vw;
+    cursor: pointer;
   }
 }
