@@ -19,8 +19,8 @@
   }
 
   .div-header-2 {
-    padding-right: 32vw;
-    padding-left: 33vw;
+    padding-right: 18vw;
+    padding-left: 28vw;
 
     .titulo-header {
       font-family: "Lobster", cursive;
@@ -36,10 +36,23 @@
     cursor: pointer;
   }
 
-  .icons-search {
-    color: rgb(234, 237, 215);
-    font-size: 4vh;
-    padding-right: 1vw;
-    cursor: pointer;
+  .div-icons {
+    display: flex;
+    width: 12vw;
+    // background-color: red;
+
+    .icons-search {
+      color: rgb(234, 237, 215);
+      font-size: 4vh;
+      padding-right: 1vw;
+      cursor: pointer;
+    }
+
+    .input-search {
+      margin-right: 1vw;
+      border-radius: 2vw;
+      height: 2.2vw;
+      border: none;
+    }
   }
 }
