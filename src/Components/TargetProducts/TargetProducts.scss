@@ -14,16 +14,41 @@
   margin-right: 1.5vw;
 
   &:hover {
-    width: 20vw;
-    height: 31vw;
-    box-shadow: 0.5vw -0.5vw #fce399;
+    animation-name: animation-div-target;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 
     .div-target-img {
-      width: 19vw;
-      height: 22vw;
+      animation-name: animation-div-target-img;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
     }
 
     .img {
+      animation-name: animation-img;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  //Hover
+  @keyframes animation-div-target {
+    100% {
+      width: 20vw;
+      height: 31vw;
+      box-shadow: 0.5vw -0.5vw #fce399;
+    }
+  }
+
+  @keyframes animation-div-target-img {
+    100% {
+      width: 19vw;
+      height: 22vw;
+    }
+  }
+
+  @keyframes animation-img {
+    100% {
       max-width: 99%;
       max-height: 99%;
     }

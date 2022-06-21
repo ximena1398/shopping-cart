@@ -1,0 +1,24 @@
+@import "../../sass/variables.scss";
+
+body {
+  margin: 0;
+
+  .div-products {
+    width: $mainWidth;
+    border-radius: $main-border-radius;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 1vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+
+    .tittle-cart {
+      font-family: "Rubik", sans-serif;
+      padding-right: 1vw;
+      text-align: center;
+      font-size: 2vw;
+    }
+  }
+}
