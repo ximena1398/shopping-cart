@@ -16,7 +16,6 @@
   // animation-duration: 1s;
 
   &:hover {
-    box-shadow: 0.5vw -0.5vw #fce399;
     animation-name: animation-div-target;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -39,6 +38,7 @@
     100% {
       width: 20vw;
       height: 31vw;
+      box-shadow: 0.5vw -0.5vw #fce399;
     }
   }
 

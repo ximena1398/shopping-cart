@@ -1,4 +1,5 @@
-import { Home } from '../scenes/Home/Home'
+import { ContentsCart } from '../scenes/ContentsCart/ContentsCart';
+import { Home } from '../scenes/Home/Home';
 // import { Login } from '../scenes/Login/Login'
 
 const PublicMap = [
@@ -7,6 +8,12 @@ const PublicMap = [
     exact: true,
     path: '/',
     component: Home
+  },
+  {
+    restricted: true,
+    exact: true,
+    path: '/ContentsCart',
+    component: ContentsCart
   },
 ]
 

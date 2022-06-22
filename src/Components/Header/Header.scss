@@ -32,27 +32,41 @@
 
   .icons {
     color: rgb(234, 237, 215);
-    font-size: 4vh;
+    font-size: 3vw;
     cursor: pointer;
   }
 
   .div-icons {
     display: flex;
     width: 12vw;
-    // background-color: red;
-
     .icons-search {
       color: rgb(234, 237, 215);
-      font-size: 4vh;
+      font-size: 3vw;
       padding-right: 1vw;
       cursor: pointer;
     }
 
-    .input-search {
+    .input-search-hidden {
       margin-right: 1vw;
       border-radius: 2vw;
+      width: 0vw;
       height: 2.2vw;
       border: none;
+      visibility: hidden;
+    }
+
+    .input-search {
+      animation-name: animation-input-search;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      background-color: white;
+      visibility: visible;
+    }
+
+    @keyframes animation-input-search {
+      100% {
+        width: 14vw;
+      }
     }
   }
 }

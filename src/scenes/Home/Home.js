@@ -6,8 +6,11 @@ import { products } from '../../constants/products';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { useHistory } from 'react-router-dom';
 
 export const Home = () => {
+  const history = useHistory();
+
   return (
     <div className='div-catalogue'>
       <Header />
@@ -15,7 +18,7 @@ export const Home = () => {
         <div className='div-cart'>
           <FontAwesomeIcon className='icon-cart' icon={faCartArrowDown} />
           <h1 className='tittle-cart'>Carrito</h1>
-          <button className='button-next-cart'><FontAwesomeIcon icon={faArrowRightLong} /></button>
+          <button onClick={() => history.push("/ContentsCart")} className='button-next-cart'><FontAwesomeIcon icon={faArrowRightLong} /></button>
         </div>
         <div>
           <div className='div-products'>
