@@ -1,3 +1,4 @@
+
 import './Header.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -12,6 +13,7 @@ export const Header = () => {
   const showSearchInput = () => {
     setactiveSearchInput(true);
 };
+
 
   return (
     <div className='div-header'>

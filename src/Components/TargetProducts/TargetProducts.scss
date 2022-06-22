@@ -12,6 +12,8 @@
   padding: 1vw;
   margin-bottom: 1.5vw;
   margin-right: 1.5vw;
+  // animation-name: animation-div-target-normal;
+  // animation-duration: 1s;
 
   &:hover {
     animation-name: animation-div-target;
@@ -54,11 +56,36 @@
     }
   }
 
+  //normal
+  @keyframes animation-div-target-normal {
+    100% {
+      width: 19vw;
+      height: 30vw;
+    }
+  }
+
+  @keyframes animation-div-target-img-normal {
+    100% {
+      width: 17vw;
+      height: 20vw;
+    }
+  }
+
+  @keyframes animation-img-normal {
+    100% {
+      max-width: 98%;
+      max-height: 98%;
+    }
+  }
+  //
+
   .img {
     max-width: 98%;
     max-height: 98%;
     border-radius: 2vw;
     cursor: pointer;
+    // animation-name: animation-img-normal;
+    // animation-duration: 1s;
   }
 
   .div-info {
@@ -87,16 +114,7 @@
     height: 20vw;
     background-color: white;
     border-radius: 2vw;
-  }
-
-  .button-add-cart-main {
-    background-color: black;
-    border-radius: 2vw;
-    border: none;
-    color: white;
-    font-size: 1.2vw;
-    font-family: "Rubik", sans-serif;
-    padding: 1vw;
-    cursor: pointer;
+    // animation-name: animation-div-target-img-normal;
+    // animation-duration: 1s;
   }
 }
